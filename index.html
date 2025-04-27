@@ -12,11 +12,43 @@
       
        <!-- Put this inside the <a-scene> -->
       <a-entity 
-      ply-model="src:dog.ply"
-      position="0 1 -2"
-      rotation="-90 90 90"
+      ply-model="src:seagull.ply"
+      position="-50 -1 25"
+      rotation="-90 180 270"
+      scale="3 3 3"
+      animation="
+      property: position;
+      from: -50 -1 25;
+      to: 0 -1 25;
+      dur: 3000;
+      loop: true;
+      dir: normal;
+      "
       ></a-entity>
-                 
+
+      
+      <a-entity
+      ply-model="src:VR World2.ply"
+      position="0 -40 -2"
+      rotation="-90 90 90"
+      scale="10 10 10"
+      ></a-entity>
+      
+      <a-entity
+      ply-model="src:crab.ply"
+      position="0 -25 27"
+      rotation="-90 360 180"
+      scale="3 3 3"
+      animation="
+      property: position;
+      from: 0 -25 27;
+      to: -10 -25 27;
+      dur: 2000;
+      loop: true;
+      dir: alternate;
+      "
+
+
     </a-scene>
   </body>
 </html>
